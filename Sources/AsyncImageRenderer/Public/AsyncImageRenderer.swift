@@ -11,14 +11,14 @@ import SwiftUI
 public class AsyncImageRenderer {
   public static func image(_ content: some View) async -> Image? {
     let task = Task {
-      let renderer = await ImageRenderer(content: content)
-      return await renderer.image
+      let imageRenderer = await ImageRenderer(content: content)
+      return await imageRenderer.image
     }
     
     let result = await task.result
     switch result {
-    case .success(let image):
-      return image
+    case .success(let renderedImage):
+      return renderedImage
     }
   }
 }
