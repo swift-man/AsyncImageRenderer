@@ -13,6 +13,11 @@ It's very blurry. Fixed this.
 
 ## SampleImage
 
+|AsyncImageRenderer|ImageRenderer|
+|------|---|
+|![Image](Resources/fixed.png)|![Image](Resources/original.png)|
+|Fixed|Original|
+
 ## Example
 ```swift
 import AsyncImageRenderer
@@ -33,6 +38,6 @@ Once you have your Swift package set up, adding Alamofire as a dependency is as 
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/swift-man/LaunchingView.git", .from: "0.8.2")
+    .package(url: "https://github.com/swift-man/AsyncImageRenderer.git", .from: "0.5.0")
 ]
 ```
